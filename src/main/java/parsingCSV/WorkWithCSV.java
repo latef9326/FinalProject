@@ -28,16 +28,16 @@ import java.util.stream.Stream;
 
 public class WorkWithCSV {
 
-    private final String vehicleDataCSV = "src/main/resources/VehiclesData.json";
-    private final String customersDataCSV = "src/main/resources/CustomersData.csv";
-    private final String rentalInformationCSV = "src/main/resources/RentalInformation.csv";
+    private final String vehicleDataJSON = "src/main/resources/VehiclesData.json";
+    private final String customersDataJSON = "src/main/resources/CustomersData.json";
+    private final String rentalInformationJSON = "src/main/resources/RentalInformation.json";
 
 
 
     @SneakyThrows
     public Vehicle findVehicleById(String vehicleId)
     {
-        Path path = Path.of(vehicleDataCSV);
+        Path path = Path.of(vehicleDataJSON);
 
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
