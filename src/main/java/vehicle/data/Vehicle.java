@@ -27,4 +27,5 @@ public class Vehicle
     private double mileage;
     private int numberOfSeats;
     private boolean isReserved;
+    private double pricePerDay;
 }
